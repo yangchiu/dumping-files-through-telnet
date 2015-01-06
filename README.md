@@ -75,9 +75,9 @@ import os
 end_of_line = "\r\n"
 host = "ftcosdev1"
 login_prompt = "login: "
-username = "member"
+username = ""
 password_prompt = "Password: "
-password = "member123"
+password = ""
 command_prompt = "ftcosdev1:<users/member>"
 
 target = sys.argv[1]
