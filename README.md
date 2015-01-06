@@ -48,7 +48,7 @@ if you want to download all files in "/usr/local/bea/projects/applications/eFPow
 
 4 directories, 10 files
 ```
-excute dump.py like this:
+execute dump.py like this:
 ```
 python dump.py /usr/local/bea/projects/applications/eFPower/css
 # print
