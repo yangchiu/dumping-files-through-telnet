@@ -5,7 +5,7 @@
 
 #### Prerequisite
 - python 2.7
-- telnetlib
+- [telnetlib](https://docs.python.org/2/library/telnetlib.html)
 
 #### Usage
 edit dump.py, filling in the required fields.
