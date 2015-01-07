@@ -49,7 +49,7 @@ if you want to download all files in /usr/local/bea/projects/applications/eFPowe
 4 directories, 10 files
 ```
 just pass the path as argument:
-```
+```python
 python dump.py /usr/local/bea/projects/applications/eFPower/css
 # print
 # Total 10 file(s):
@@ -104,7 +104,7 @@ C:\USR
                                     __style__.css
 ```
 arg can be a single file, too:
-```
+```python
 python dump.py logAnalysis/test.txt
 # print
 # Total 1 file(s):
