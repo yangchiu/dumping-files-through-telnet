@@ -113,4 +113,13 @@ python dump.py logAnalysis/test.txt
 #   Dumping logAnalysis/test.txt...
 # Done!
 ```
-arg isn't beginning with '/', so downloaded files would be located at current directory.
+arg isn't beginning with '/', so downloaded files would be located at current directory:
+```
+tree C:\Users\username\dump /f
+C:\USERS\USERNAME\DUMP
+│  dump.py
+│  README.md
+│
+└─logAnalysis
+        test.txt
+```
