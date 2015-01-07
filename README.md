@@ -1,7 +1,7 @@
 # dumping-files-through-telnet
-- downloading files from a server which has no samba or ftp service to local through telnet.
-- if size of file to be downloaded is hundreds of KBs, it's would block for a long time.
-- if arg is start with '/', downloaded files would be located at your local root directory (e.g. C://), else it would be located at current path.
+- downloading files from a server without samba or ftp service.
+- if the size of file to be downloaded is hundreds of KBs, it's would block for a long time.
+- if arg is beginning with '/', downloaded files would be located at your local root directory (e.g. C://), else it would be located at current directory.
 
 #### Prerequisite
 - python 2.7
@@ -28,7 +28,7 @@ password_prompt = "Password: "
 password = "XXXXXXX"
 command_prompt = "osdev1:<users/member>"
 ```
-if you want to download all files in "/usr/local/bea/projects/applications/eFPower/css"
+if you want to download all files in /usr/local/bea/projects/applications/eFPower/css
 ```
 /usr/local/bea/projects/applications/eFPower/css
 |-- fonts
@@ -48,7 +48,7 @@ if you want to download all files in "/usr/local/bea/projects/applications/eFPow
 
 4 directories, 10 files
 ```
-execute dump.py like this:
+just pass the path as argument:
 ```
 python dump.py /usr/local/bea/projects/applications/eFPower/css
 # print
@@ -76,11 +76,9 @@ python dump.py /usr/local/bea/projects/applications/eFPower/css
 #   Dumping /usr/local/bea/projects/applications/eFPower/css/fonts/icons/entypo.woff...
 # Done!
 ```
-arg is start with '/', so downloaded files would be located at local root directory (C://):
+arg is beginning with '/', so downloaded files would be located at local root directory (C://):
 ```
 tree C:\usr /f
-列出資料夾 PATH
-磁碟區序號為 EC1F-D82E
 C:\USR
 └─local
     └─bea
@@ -115,4 +113,4 @@ python dump.py logAnalysis/test.txt
 #   Dumping logAnalysis/test.txt...
 # Done!
 ```
-arg isn't start with '/', so downloaded files would be located at current directory.
+arg isn't beginning with '/', so downloaded files would be located at current directory.
